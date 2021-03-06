@@ -16,7 +16,12 @@
   <input (change)="onChangeUseSymbols()" type="checkbox" />
 </div>
 <div>
-  <button (click)="onButtonClick()">Generate Random Pass</button>
+  <button
+    [disabled]="!(length && (includeLetters || includeSymbols || includeNumbers))"
+    (click)="onButtonClick()"
+  >
+    Generate Random Pass
+  </button>
 </div>
 <div>
   <label for="">Your Random Password</label>
