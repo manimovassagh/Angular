@@ -6,12 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  length=0;
   password='';
   includeLetters=false;
   includeNumbers=false;
   includeSymbols=false;
-  
 
+
+  onChangeLength(value:string){
+const parsedValue=parseInt(value);
+  }
+  
 onButtonClick(){
 this.password='my password'}
 
