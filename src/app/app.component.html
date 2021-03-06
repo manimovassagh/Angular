@@ -18,5 +18,7 @@
 <div>
   <button (click)="onButtonClick()">Generate Random Pass</button>
 </div>
+<div>
 <label for="">Your Random Password</label>
-<input type="text" />
+<input [value]='password' />
+</div>
