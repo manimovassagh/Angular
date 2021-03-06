@@ -13,19 +13,26 @@ export class AppComponent {
   includeSymbols=false;
 
 
-  onChangeLength(value:string){
+onChangeLength(value:string){
 const parsedValue=parseInt(value);
-  }
-  
+
+if (!isNaN(parsedValue)) {
+this.length=parsedValue;
+}
+}
+
 onButtonClick(){
-this.password='my password'}
+this.password='my password'
+}
 
 onChangeUseLetters(){
 this.includeLetters=!this.includeLetters;
 }
+
 onChangeUseNumbers(){
 this.includeNumbers=!this.includeNumbers;
 }
+
 onChangeUseSymbols(){
 this.includeSymbols=!this.includeSymbols;
 }
