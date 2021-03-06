@@ -9,7 +9,5 @@ export class AppComponent {
   
   title = 'angular';
 
-  showSome(){
-    console.log('you showed something')
-  }
+  
 }
