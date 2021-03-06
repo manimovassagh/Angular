@@ -9,5 +9,7 @@ export class AppComponent {
   
   title = 'angular';
 
-  
+  onButtonClick(){
+    console.log('you Clicked in Angular');
+  }
 }
