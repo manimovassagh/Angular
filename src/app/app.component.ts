@@ -24,7 +24,7 @@ this.length=parsedValue;
 
 onButtonClick(){
   const numbers="1234567890";
-  const letters="abcdefghijklmnopqrstwxyz";
+  const letters="abcdefghijklmnopqrstwxyzABCDEFGHIJKLMNOPQRSTUWXYZ";
   const symbols="!@#$%^*()_+";
 
   let validChars='';
